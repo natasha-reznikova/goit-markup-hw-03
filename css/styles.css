@@ -392,8 +392,11 @@ img {
 
 .list-images-item {
   flex-basis: calc(100% / 3 - 30px);
-  margin-top: 30px;
   margin-left: 30px;
+}
+
+.list-images-item:nth-last-child(-n + 9) {
+  margin-bottom: 30px;
 }
 
 .img-comment {
