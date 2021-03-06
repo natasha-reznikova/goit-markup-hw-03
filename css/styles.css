@@ -152,15 +152,14 @@ img {
   padding-top: 200px;
   margin: 0 auto;
   background: var(--hero-color);
-  width: 1600px;
-  height: 600px;
+  max-width: 1600px;
+  min-height: 600px;
   padding-top: 200px;
   text-align: center;
 }
 
 .main-title {
-  padding-left: 252px;
-  padding-right: 252px;
+  max-width: 696px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -254,7 +253,6 @@ img {
 }
 
 .title-item-cont {
-  max-width: 270px;
   margin-top: 10px;
   font-size: 14px;
   line-height: 1.71;
@@ -264,6 +262,7 @@ img {
 
 .title-item {
   margin-left: 30px;
+  max-width: 270px;
 }
 
 /*            EMD advantages             */
@@ -277,13 +276,15 @@ img {
 
 .team-item {
   margin-left: 30px;
-  flex-basis: calc(100% / 4-30px);
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .team-item-inform {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   border: 1px solid #eeeeee;
   border-radius: 0px 0px 4px 4px;
   background-color: var(--first-text-color);
@@ -309,8 +310,6 @@ img {
   padding-bottom: var(--section-pb);
   padding-top: var(--section-pt);
   background: var(--team-buttons-color);
-  width: 1600px;
-  height: 648px;
   margin: 0 auto;
 }
 
@@ -321,8 +320,6 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 1600px;
-  height: 252px;
   margin: 0 auto;
   background: var(--footer-color);
 }
@@ -331,7 +328,7 @@ img {
   margin-top: 20px;
 }
 
-.address-list {
+.address-list:not(:first-child) {
   margin-top: 9px;
 }
 
@@ -376,22 +373,24 @@ img {
 
 .images-list {
   display: flex;
-  margin-top: 50px;
+  margin-top: 34px;
   margin-left: -30px;
   flex-wrap: wrap;
 }
 
 .list-images-item {
-  flex-basis: calc(100% / 3-30px);
-  margin-top: 22px;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
   margin-left: 30px;
 }
 
 .img-comment {
   padding-left: 24px;
+  padding-right: 24px;
   padding-top: 17px;
   padding-bottom: 30px;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .buttons-item {
@@ -429,6 +428,7 @@ img {
 }
 
 .kind {
+  margin-top: 4px;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
